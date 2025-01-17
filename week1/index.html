@@ -169,7 +169,7 @@
                     <h5 className='mt-3'>更多圖片：</h5>
                     <div className='d-flex flex-wrap'>
                       {tempProduct.imagesUrl.map((item) => (
-                        <img src={item} className='' />
+                        <img key={index} src={item} className='' />
                       ))}
                     </div>
                   </div>

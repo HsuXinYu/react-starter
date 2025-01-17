@@ -36,26 +36,26 @@
             function App() {
               const data = {
                 imageUrl:
-                  "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2352&q=80",
-                name: "卡斯伯",
+                  'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2352&q=80',
+                name: '卡斯伯',
                 description:
-                  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi culpa aspernatur tempore cupiditate illo minima voluptatem blanditiis optio accusantium earum voluptate magni repellendus, ipsa dolor adipisci libero qui commodi veritatis.",
-                link: "https://www.casper.tw/",
-              };
+                  'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi culpa aspernatur tempore cupiditate illo minima voluptatem blanditiis optio accusantium earum voluptate magni repellendus, ipsa dolor adipisci libero qui commodi veritatis.',
+                link: 'https://www.casper.tw/',
+              }
 
               // #3 直接插入 HTML 結構的變數
               // https://getbootstrap.com/docs/5.2/components/card/#list-groups
 
               return (
-                <div className="card w-50">
-                  <img src={data.imageUrl} className="card-img-top" alt="..." />
-                  <div className="card-body">
-                    <h5 className="card-title">{data.name}</h5>
-                    <p className="card-text">{data.description}</p>
+                <div className='card w-50'>
+                  <img src={data.imageUrl} className='card-img-top' alt='...' />
+                  <div className='card-body'>
+                    <h5 className='card-title'>{data.name}</h5>
+                    <p className='card-text'>{data.description}</p>
                     <a
                       href={data.link}
-                      target="_blank"
-                      className="btn btn-primary"
+                      target='_blank'
+                      className='btn btn-primary'
                     >
                       Go somewhere
                     </a>
@@ -65,14 +65,14 @@
 
                   {/* 2. 陣列中的值會直接呈現在畫面上 */}
 
-                  <ul className="list-group list-group-flush"></ul>
+                  <ul className='list-group list-group-flush'></ul>
                 </div>
-              );
+              )
             }
 
-            const el = document.getElementById("root");
-            const root = ReactDOM.createRoot(el);
-            root.render(<App />);
+            const el = document.getElementById('root')
+            const root = ReactDOM.createRoot(el)
+            root.render(<App />)
           </script>
 
           <!-- 🙇🙇練習結束🙇🙇 -->
